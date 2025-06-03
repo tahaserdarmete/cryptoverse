@@ -1,0 +1,229 @@
+/* * Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* * Root */
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --text-color: #2c3e50;
+  --light-bg: #f8f9fa;
+  --wihte-color: #ffffff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+}
+
+/* * Header */
+header .navbar {
+  background-color: var(--primary-color);
+  padding: 1rem 4rem;
+}
+
+header .navbar-brand {
+  font-size: 1.5rem !important;
+  font-weight: 700;
+  color: var(--wihte-color) !important;
+}
+
+header .navbar-brand i {
+  color: var(--secondary-color);
+}
+
+header .nav-link {
+  color: #ccc;
+  padding: 0.5rem 1rem !important;
+}
+
+header .nav-link.active {
+  color: var(--wihte-color) !important;
+}
+
+header .nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+
+header #menu-icon {
+  font-size: 20px;
+  padding: 10px;
+  color: #ccc;
+}
+
+/* * Home */
+
+#home .carousel-item {
+  position: relative;
+}
+#home .carousel-item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.399), rgba(0, 0, 0, 0.399));
+}
+
+#home .carousel-item img {
+  height: 80vh !important;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 60px;
+  height: 60px;
+  font-weight: bold;
+}
+
+.carousel-caption {
+  margin-bottom: 80px;
+}
+
+.carousel-caption h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+/* * Popular Cryptos */
+
+.section-card {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.section-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.section-card .icon {
+  width: 80px;
+  height: 80;
+  background-color: var(--light-bg);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 1.5rem;
+}
+
+.section-card .icon i {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.section-card .card-title {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.section-card .card-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* * Features */
+#features {
+  background-color: var(--light-bg);
+}
+
+/* * Testimonials */
+#user-icon {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.fa-star {
+  color: #fdc106;
+}
+
+.section-card {
+  position: relative;
+}
+
+.section-card .icons {
+  position: absolute;
+  bottom: 10px;
+}
+
+/* * News */
+#news {
+  background-color: var(--light-bg);
+}
+
+.news-card {
+  border: none;
+  border-radius: 20px !important;
+  cursor: pointer;
+}
+
+.news-card .news-image {
+  overflow: hidden;
+  border-radius: 20px 20px 0 0 !important;
+  position: relative;
+}
+
+.news-card .news-category {
+  position: absolute;
+  background-color: var(--secondary-color);
+  top: 1rem;
+  right: 1rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+.news-card .news-image img {
+  transition: all 0.5s;
+}
+
+.news-card:hover .news-image img {
+  transform: scale(1.1);
+}
+
+/* * Contact */
+
+.contact-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 860px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+form textarea {
+  resize: none;
+}
+
+#info-item-icon {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+/* * Footer */
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+#footer-icon {
+  color: var(--secondary-color);
+}
+
+/* ? MEDIA SECTİON */
+@media (max-width: 768px) {
+  header .navbar {
+    padding: 1rem;
+  }
+}
