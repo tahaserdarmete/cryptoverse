@@ -3,6 +3,8 @@
 Cryptoverse is a simple cryptocurrency information platform with a modern user interface and responsive design. It was developed using HTML, CSS and Bootstrap.
 
 
+
+
 # 🚀 Features
 
 - Responsive design compatible with mobile, tablet and desktop devices
@@ -14,11 +16,15 @@ Cryptoverse is a simple cryptocurrency information platform with a modern user i
 - Easily extensible structure with Bootstrap components
 
 
+
+
 # 🛠️ Technologies Used
 
 - HTML5
 - CSS3
 - Bootstrap 5
+
+
 
 
 # 🎥 ScreenShot
